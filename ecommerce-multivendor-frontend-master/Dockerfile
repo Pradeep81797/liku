@@ -8,7 +8,8 @@ COPY package*.json ./
 RUN npm install --only=production
 # Copy the rest of the application code to the working directory
 COPY . .
-# Build the application
-RUN npm run build
 #Access to server 
 EXPOSE 3000
+# Build the application
+RUN npm run build
+
