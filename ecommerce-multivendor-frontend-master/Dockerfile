@@ -10,3 +10,5 @@ RUN npm install --only=production
 COPY . .
 # Build the application
 RUN npm run build
+#Access to server 
+EXPOSE 3000
